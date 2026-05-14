@@ -89,7 +89,7 @@ Exemplo:
 public class Gerente extends Funcionario
 ```
 
-Nesse caso, a classe `Gerente` herda características da classe `Funcionario`.
+Nesse caso, a classe `Chefe` herda características da classe `Funcionario`.
 
 ---
 
@@ -145,7 +145,7 @@ Utilização de construtores para inicializar os objetos no momento da criação
 Criação de métodos responsáveis pelos cálculos e exibição das informações dos funcionários.
 
 ```java
-public double calcularSalario() {
+public float calcularSalario() {
     return salario;
 }
 ```
