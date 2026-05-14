@@ -42,7 +42,7 @@ src
 └── com.github.agpsm.folhadepagamentos
     ├── core
     │   ├── Funcionario.java
-    │   ├── Gerente.java
+    │   ├── Chefe.java
     │   └── ...
     │
     └── ui
