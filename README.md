@@ -110,18 +110,17 @@ Exemplo:
 ### Classe Funcionario
 
 ```java
-public double calcularSalario() {
-    return salario;
+public abstract float calcular_salario();
 }
 ```
 
-### Classe Gerente
+### Classe Chefe
 
 ```java
-@Override
-public double calcularSalario() {
-    return salario + bonus;
-}
+   @Override
+    public float calcular_salario() {
+        return this.salario + this.salario * this.adicional_funcao / 100 + this.beneficio;
+    }
 ```
 
 Assim, o mesmo método possui comportamentos diferentes dependendo do objeto, caracterizando o polimorfismo.
@@ -133,10 +132,10 @@ Assim, o mesmo método possui comportamentos diferentes dependendo do objeto, ca
 Utilização de construtores para inicializar os objetos no momento da criação.
 
 ```java
-public Funcionario(String nome, double salario) {
-    this.nome = nome;
-    this.salario = salario;
-}
+  public Funcionario(String nome_funcionario, int numero_registro) {
+        this.nome_funcionario = nome_funcionario;
+        this.numero_registro = numero_registro;
+    }
 ```
 
 ---
